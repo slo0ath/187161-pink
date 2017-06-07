@@ -6,73 +6,80 @@
 	</head>
 	<body>
 		<nav class="main-nav">
-			<div class="main-nav--logo"></div>
-			<div class="main-nav--menu"></div>
+			<div class="main-nav__logo"></div>
+			<div class="main-nav__menu"></div>
+			<a href="#" class="main-nav__show"></a> <!-- кнопка скрытия меню, меню ниже по макету не отображается -->
+				<ul>
+					<li>Главная</li>
+					<li>Фотографии</li>
+					<li>Конкурс</li>
+					<li>HTML Academy</li>
+				</ul>
 		</nav>
 		<section class="promo-img"></section>
 		<section class="download">
-			<button class="download--btn">Скачать приложение</button>
-			<img src="" alt="" class="download--apple">
-			<img src="" alt="" class="download--android">
-			<img src="" alt="" class="download--win">
+			<button class="download__btn">Скачать приложение</button>
+			<img src="" alt="" class="download__apple">
+			<img src="" alt="" class="download__android">
+			<img src="" alt="" class="download__win">
 			<p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
 		</section>
 		<section class="promo-tag">
-			<p class="promo-tag--sent">Устали от серости мегаполиса?</p>
-			<p class="promo-tag--sent">Нам есть, что вам предложить!</p>
+			<p class="promo-tag__sent">Устали от серости мегаполиса?</p>
+			<p class="promo-tag__sent">Нам есть, что вам предложить!</p>
 		</section>
 		<section class="advantages">
-			<div class="advantages--mood">
-				<h2 class="advantages--headline">Поднимает настроение</h2>
-				<p class="advantages--content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+			<div class="advantages__item">
+				<h2 class="advantages__headline">Поднимает настроение</h2>
+				<p class="advantages__content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
 			</div>
-			<div class="advantages--world">
-				<h2 class="advantages--headline">Меняет мир вокруг</h2>
-				<p class="advantages--content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+			<div class="advantages__item">
+				<h2 class="advantages__headline">Меняет мир вокруг</h2>
+				<p class="advantages__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
 			</div>
-			<div class="advantages--friends">
-				<h2 class="advantages--headline">Заводит новых друзей</h2>
-				<p class="advantages--content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+			<div class="advantages__item">
+				<h2 class="advantages__headline">Заводит новых друзей</h2>
+				<p class="advantages__content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
 			</div>
-			<img src="" alt="" class="advantages--hello">
+			<img src="" alt="" class="advantages__hello">
 		</section>
 		<section class="reviews">
-			<h2 class="reviews--author">Николай Петров</h2>
-			<blockquote class="reviews--blockquote">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
-			<a href="" class="reviews--slider"></a> <!-- уточнить про слайдер -->
+			<h2 class="reviews__author">Николай Петров</h2>
+			<blockquote class="reviews__blockquote">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
+			<a href="" class="reviews__slider"></a> <!-- уточнить про слайдер -->
 		</section>
 		<section class="price">
 			<div class="price-cost">
-				<p class="price-cost--hit">Хит</p>
-				<p class="price-cost--tariff">Стандарт</p>
-				<p class="price-cost--cost">3.99 USD</p>
+				<p class="price-cost__hit">Хит</p>
+				<p class="price-cost__tariff">Стандарт</p>
+				<p class="price-cost__cost">3.99 USD</p>
 			</div>
-			<div class="price-option--pink">
-				<p class="price-option--pinkfilter">Розовый фильтр</p>
-				<img src="" alt="" class="price-option--check">
+			<div class="price-option">
+				<p class="price-option__name">Розовый фильтр</p>
+				<img src="" alt="" class="price-option__check">
 			</div>
-			<div class="price-option--smile"> <!-- Поменять название класса -->
-				<p class="price-option--smiles">Смайлики</p>
-				<img src="" alt="" class="price-option--check">
+			<div class="price-option"> 
+				<p class="price-option__name">Смайлики</p>
+				<img src="" alt="" class="price-option__check">
 			</div>
-			<div class="price-option--comment"> <!-- Поменять название класса -->
-				<p class="price-option--comments">Комментарии</p>
-				<img src="" alt="" class="price-option--none">
+			<div class="price-option"> 
+				<p class="price-option__name">Комментарии</p>
+				<img src="" alt="" class="price-option__none">
 			</div>
 			<a href="" class="price-slider"></a> <!-- уточнить про слайдер -->
 		</section>
 		<section class="contacts">
 			<p class="contacts-headline">Остались вопросы? Свяжитесь с нами!</p>
-			<div class="contacts-call">
-				<h2 class="contacts-call--headline">Звоните:</h2>
-				<p class="contacts-call-tel">+7(812)555-66-66</p>
+			<div class="contacts-option">
+				<h2 class="contacts-option__name">Звоните:</h2>
+				<p class="contacts-option__tel">+7(812)555-66-66</p>
 			</div>
-			<div class="contacts-write">
-				<h2 class="contacts-write--headline">Пишите:</h2>
-				<p class="contacts-write--email">mail@htmlacademy.ru</p>
+			<div class="contacts-option">
+				<h2 class="contacts-option__name">Пишите:</h2>
+				<p class="contacts-option__email">mail@htmlacademy.ru</p>
 			</div>
-			<div class="contacts-come">
-				<h2 class="contacts-come--headline">Приезжайте в гости:</h2>
+			<div class="contacts-option">
+				<h2 class="contacts-option__name">Приезжайте в гости:</h2>
 				<p class="contacts-come--adress">ул. Большая Конюшенная, 19/8</p>
 			</div>
 		</section>

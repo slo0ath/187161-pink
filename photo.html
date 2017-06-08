@@ -62,8 +62,8 @@
 				<p class="photo-posted__likes">Нравится: 4</p>
 			</article>
 			<article class="photo-posted">
-				<p class="photo-posted__author">Максим</p>
-				<p class="photo-posted__time">(40 часов назад)</p>
+				<p class="photo-posted__author">Максим <!-- поменять тег на span -->
+				<span class="photo-posted__time">(40 часов назад)</span></p>
 				<p class="photo-posted__comment">Где снег-то?</p>
 				<img src="" alt="like">
 				<p class="photo-posted__likes">Нравится: 150</p>
@@ -74,7 +74,31 @@
 				<p class="photo-posted__comment">Всем GM и взаимные лайки</p>
 				<img src="" alt="like">
 				<p class="photo-posted__likes">Нравится: 2560</p>
-			</article>
+      </article>
+      <article class="add-photo">
+        <div class="add-photo__headline">
+          <p>Затмите их всех!</p>
+          <p>Выкладывайте всё, что накопилось в телефоне!</p>
+        </div>
+        <img src="" alt="your picture">
+        <span class="add-photo__size"></span>
+        <span class="add-photo__color"></span>
+        <span class="add-photo__lightness"></span>
+        <!-- место для ползунка -->
+        <button class="add-photo__button">Запостить</button>
+        <button class="add-photo__button" disabled>Отмена</button>
+      </article>
 		</section>
+    <footer>
+        <img src="" alt="" class="footer-logo">
+        <div class="social-links">
+          <ul>
+            <li><a href="twitter.com">twitter</a></li>
+            <li><a href="facebook.com">fb</a></li>
+            <li><a href="youtube.com">youtube</a></li>
+          </ul>
+        </div>
+        <div class="footer-copyright">Разработано <img src="" alt="htmlacademy.ru"></div>
+      </footer>
 	</body>
 </html>

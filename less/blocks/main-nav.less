@@ -1,0 +1,55 @@
+.main-nav{
+  height: 462px;
+  background-image: url(/img/bg-back-mobile@1x.jpg);
+}
+
+.main-nav__header{
+  padding: 10px;
+  background-color: #283645;
+}
+
+.main-nav__show{
+  width: 30px;
+  height: 30px;
+  float: right;
+  background: url(/img/icon-menu-burger.svg) no-repeat center center;
+}
+
+.main-nav__show:hover{
+  background: url(/img/icon-menu-cross.svg) no-repeat center center;
+}
+
+.main-nav__menu{
+  padding: 0px;
+  display: none;
+}
+
+/* тестовый вариант отображения меню при наведении на кнопку; НЕ РАБОТАЕТ
+.main-nav__show:hover ~ .main-nav__menu,
+.main-nav__show:active ~ .main-nav__menu,
+.main-nav__menu:hover{
+  display: block;
+}
+*/
+
+.main-nav li{
+  list-style: none;
+  width:auto;
+  background-color: #283645;
+  height: 20px;
+  color: #fff;
+  font-family: "Open Sans Bold", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: inset 0px 1px 1px white;
+}
+
+.main-nav>img{
+  position: relative;
+  bottom: -129px;
+}
+

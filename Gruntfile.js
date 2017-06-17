@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-module.exports = function(grunt) {
-    grunt.loadNpmTasks("grunt-contrib-less");
-    grunt.initConfig({
-      less: {
-        style: {
-          files:{
-            "css/style.css": "less/style.less"
-          }
-        }
-      }
-    });
-  }
-=======
+
 "use strict";
 
 module.exports = function(grunt) {
@@ -71,4 +58,4 @@ module.exports = function(grunt) {
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
 };
->>>>>>> 200c24f689a1e48912512eebb7292b2954a416e1
+

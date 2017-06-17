@@ -4,10 +4,8 @@
   "private": true,
   "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
-<<<<<<< HEAD
-    "@htmlacademy/editorconfig-cli": "1.x",
-    "grunt-contrib-less": "^1.4.1"
-=======
+
+
     "autoprefixer": "6.7.x",
     "grunt": "1.0.1",
     "grunt-browser-sync": "2.2.0",
@@ -15,7 +13,7 @@
     "grunt-contrib-watch": "1.0.0",
     "grunt-postcss": "0.8.0",
     "@htmlacademy/editorconfig-cli": "1.x"
->>>>>>> 200c24f689a1e48912512eebb7292b2954a416e1
+
   },
   "scripts": {
     "test": "editorconfig-cli",

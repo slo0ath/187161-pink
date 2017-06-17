@@ -3,34 +3,33 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Pink</title>
+    <link rel="stylesheet" href="/css/style.css">
 	</head>
 	<body>
 		<nav class="main-nav">
-			<div class="main-nav__logo"></div>
-			<div class="main-nav__menu">
-				<a href="#" class="main-nav__show"></a> <!-- кнопка скрытия меню -->
-				<ul>
-					<li><a>Главная</a></li>
-          <li><a>Фотографии</a></li>
-          <li><a>Конкурс</a></li>
-          <li><a>HTML Academy</a></li>
-				</ul>
-			</div>
+      <div class="main-nav__header">
+        <img src="/img/logo-pink-white-mobile.svg" alt="">
+        <a href="#"><div class="main-nav__show"></div></a> <!-- кнопка скрытия меню, меню ниже по макету не отображается -->
+      </div>
+      <ul class="main-nav__menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="photo.html">Фотографии</a></li>
+        <li><a href="form.html">Конкурс</a></li>
+        <li><a>HTML Academy</a></li>
+      </ul>
+      <p class="main-nav__promo">Конкурс на самое безбашенное путешествие с Пинк</p>
     </nav>
-		<section class="promo-contest">
-			<p>Конкурс на самое безбашенное путешествие с Пинк</p>
-		</section>
 		<form name="form-name" action="https://echo.htmlacademy.ru/" method="post">
-			<fieldset>
+			<fieldset class="form__name">
 				<p>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-				<label for="user-surname"> Фамилия: </label>
-				<input type="name" name="user-surname" id="user-surname" placeholder="Укажите фамилию" required>
-				<label for="user-name"> Имя: </label>
-				<input type="name" name="user-name" id="user-name" placeholder="Введите ваше имя" required>
-				<label for="user-middlename"> Фамилия: </label>
+				<label for="user-surname"> Фамилия: </label><br>
+				<input type="name" name="user-surname" id="user-surname" placeholder="Укажите фамилию *" required><br>
+				<label for="user-name"> Имя: </label><br>
+				<input type="name" name="user-name" id="user-name" placeholder="Введите ваше имя *" required><br>
+				<label for="user-middlename"> Отчество: </label><br>
 				<input type="name" name="user-middlename" id="user-middlename" placeholder="Ну и отчество тоже">
 			</fieldset>
-			<fieldset>
+			<fieldset class="form__achievments">
 				<legend>Ваши безбашенные достижения в путешествии</legend>
 				<input type="checkbox" name="shark-selfie" id="shark-selfie" checked>
 				<label for="shark-selfie"> Сделал селфи с акулой </label><br>
@@ -45,13 +44,13 @@
 				<input type="checkbox" name="destroyed-hotel" id="destroyed-hotel">
 				<label for="destroyed-hotel">Разгромил отель</label><br>
 			</fieldset>
-			<fieldset>
+			<fieldset class="form__contacts">
 				<label for="user-tel">Номер телефона</label>
 				<input type="tel" name="user-tel" id="user-tel" placeholder="Номер, пожалуйста">
 				<label for="user-email">Адрес почты</label>
 				<input type="email" name="user-email" id="user-email" placeholder="Введите почту" required>
 			</fieldset>
-			<fieldset>
+			<fieldset class="form__os">
 				<legend>С каким приложеием путешествовали?</legend>
 				<label>
 					<input type="radio" name="pink-os" value="pink-ios" checked>
@@ -66,7 +65,7 @@
 					Windows Phone
 				</label>
 			</fieldset>
-			<fieldset>
+			<fieldset class="form__story">
 				<legend>Опишите свои эмоции</legend>
 				<textarea name="user-story" id="user-story" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях
 				</textarea>
